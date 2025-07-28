@@ -1,0 +1,59 @@
+/*bg*/
+.bg-navy {
+  background-color: #1a252f;
+}
+.bg-light-navy {
+  background-color: #2c3e50;
+}
+.bg-green {
+  background-color: #1abc9c;
+}
+
+/*color*/
+.text-navy {
+  color: #1a252f;
+}
+.text-light-navy {
+  color: #2c3e50;
+}
+.text-green {
+  color: #1abc9c;
+}
+/*root*/
+:root {
+  --navy: #1a252f;
+  --light-navy: #2c3e50;
+  --green: #1abc9c;
+}
+/*font*/
+.fw-500 {
+  font-weight: 500;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fs-28 {
+  font-size: 28px;
+}
+.fs-32 {
+  font-size: 32px;
+}
+.fs-40 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1a252f;
+}
+
+section {
+  margin-top: 70px;
+}
+
+.my-btn:hover {
+  color: #1abc9c !important;
+  border: solid #1abc9c 1px;
+  background-color: #fff;
+}

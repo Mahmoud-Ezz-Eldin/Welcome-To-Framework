@@ -1,0 +1,69 @@
+<section class="contact p-5">
+  <div
+    class="container d-flex justify-content-center flex-column align-items-center"
+  >
+    <h2>Contact Section</h2>
+    <app-header-underline></app-header-underline>
+
+    <form
+      class="w-50 d-flex flex-column justify-content-center align-items-center gap-3"
+    >
+      <div class="w-100">
+        <label #lname class="text-green align-self-start" for="name"
+          >User Name :</label
+        >
+        <input
+          (input)="showLabel(lname, $event)"
+          id="name"
+          type="text"
+          class="form-control"
+          placeholder="Enter Your Name"
+        />
+      </div>
+
+      <div class="w-100">
+        <label #lage class="text-green align-self-start" for="age"
+          >User Age :</label
+        >
+        <input
+          (input)="showLabel(lage, $event)"
+          id="age"
+          type="number"
+          class="form-control"
+          placeholder="Enter Your Age"
+        />
+      </div>
+
+      <div class="w-100">
+        <label #lemail class="text-green align-self-start" for="email"
+          >User Email :</label
+        >
+
+        <input
+          (input)="showLabel(lemail, $event)"
+          id="email"
+          type="email"
+          class="form-control"
+          placeholder="Enter Your Email"
+        />
+      </div>
+
+      <div class="w-100">
+        <label #lpass class="text-green align-self-start" for="password"
+          >User Password :</label
+        >
+        <input
+          (input)="showLabel(lpass, $event)"
+          id="password"
+          type="password"
+          class="form-control"
+          placeholder="Enter Your Password"
+        />
+      </div>
+
+      <button class="btn bg-green text-white rounded-2 align-self-start my-btn">
+        Send Message
+      </button>
+    </form>
+  </div>
+</section>

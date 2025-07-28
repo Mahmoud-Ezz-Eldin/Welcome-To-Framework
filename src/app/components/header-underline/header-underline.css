@@ -1,0 +1,29 @@
+/*star icon*/
+.my-icon {
+  position: relative;
+  color: inherit;
+}
+.my-icon::before,
+.my-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 60px;
+  height: 2px;
+  background-color: currentColor;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.my-icon::after {
+  left: 100%;
+  margin-left: 10px;
+}
+
+.my-icon::before {
+  right: 100%;
+  margin-right: 10px;
+}

@@ -1,0 +1,78 @@
+<section class="portfolio">
+  <app-modal [modalImg]="pressedImg" [modalClasses]="modalClass"></app-modal>
+  <div
+    class="container d-flex flex-column justify-content-center align-items-center text-white gap-3 vh-100"
+  >
+    <h2 class="text-navy">MY PORTFOLIO</h2>
+
+    <app-header-underline class="text-navy"></app-header-underline>
+
+    <div class="gallery row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="col">
+        <div class="inner-gallery">
+          <img
+            (click)="openModal($event)"
+            src="./assets/html.png"
+            width="150px"
+            alt="html logo"
+          />
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="inner-gallery">
+          <img
+            (click)="openModal($event)"
+            src="./assets/css3.png"
+            width="150px"
+            alt="css3 logo"
+          />
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="inner-gallery">
+          <img
+            (click)="openModal($event)"
+            src="./assets/javascript.png"
+            width="150px"
+            alt="javascript logo"
+          />
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="inner-gallery">
+          <img
+            (click)="openModal($event)"
+            src="./assets/ts.png"
+            width="150px"
+            alt="typescript logo"
+          />
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="inner-gallery">
+          <img
+            (click)="openModal($event)"
+            src="./assets/bootstrap.png"
+            width="150px"
+            alt="bootstrap logo"
+          />
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="inner-gallery">
+          <img
+            (click)="openModal($event)"
+            src="./assets/angular.png"
+            width="150px"
+            alt="angular logo"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

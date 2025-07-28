@@ -1,0 +1,7 @@
+<div class="modal {{ modalClasses }}" #element>
+  <div class="modal-content bg-navy text-white rounded-3">
+    <i (click)="closeModal(element)" class="x-icon fa-solid fa-xmark m-3"></i>
+
+    <img [src]="modalImg" alt="Selected Image" />
+  </div>
+</div>

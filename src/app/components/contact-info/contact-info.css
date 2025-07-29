@@ -1,6 +1,6 @@
 .inner ul li {
-  height: 45px;
   width: 45px;
+  aspect-ratio: 1/1;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;

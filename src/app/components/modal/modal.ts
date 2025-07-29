@@ -8,8 +8,10 @@ import { Component, Input } from '@angular/core';
 })
 export class Modal {
   @Input() modalImg!: string;
-  @Input() modalClasses: string = 'd-none';
-  closeModal(e: HTMLDivElement): void {
-    e.classList.add('d-none');
+  @Input() modalImgAlt!: string;
+  @Input() isModalOpen: boolean = false;
+
+  closeModal(): void {
+    this.isModalOpen = false;
   }
 }

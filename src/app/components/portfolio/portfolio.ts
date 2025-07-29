@@ -10,11 +10,17 @@ import { Modal } from '../modal/modal';
 })
 export class Portfolio {
   pressedImg!: string;
-  modalClass!: string;
+  modalImgAlt!: string;
+  isModalOpen!: boolean;
 
   openModal(e: MouseEvent): void {
     const imageUrl: string = (e.target as HTMLImageElement).src;
+    const imageAlt: string = (e.target as HTMLImageElement).alt;
+
+    this.modalImgAlt = imageAlt;
     this.pressedImg = imageUrl;
-    this.modalClass = 'd-flex justify-content-center align-items-center';
+    this.isModalOpen = true;
+
+    console.log('hello');
   }
 }

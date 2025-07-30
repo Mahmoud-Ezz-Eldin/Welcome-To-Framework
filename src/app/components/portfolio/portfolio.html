@@ -1,4 +1,5 @@
 <app-modal
+  (modalStatus)="isModalOpen = $event"
   [modalImg]="pressedImg"
   [modalImgAlt]="modalImgAlt"
   [isModalOpen]="isModalOpen"

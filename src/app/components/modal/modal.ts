@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-modal',
@@ -10,8 +10,9 @@ export class Modal {
   @Input() modalImg!: string;
   @Input() modalImgAlt!: string;
   @Input() isModalOpen: boolean = false;
+  @Output() modalStatus: EventEmitter<boolean> = new EventEmitter();
 
   closeModal(): void {
-    this.isModalOpen = false;
+    this.modalStatus.emit(false);
   }
 }
